@@ -1,0 +1,109 @@
+{
+  "recordType": "operator-controlled change rehearsal",
+  "recordId": "WAVE-1794173735",
+  "contractAddress": "0x91879134248f50890ADd4AE2624bEd81bc1B559e",
+  "wallets": {
+    "owner": "0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f",
+    "analyst": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A"
+  },
+  "transactions": {
+    "file_change": "0x611289a306e511f6c2dd95186ebd2db79e6c03680cf7eeccfa497d85488952c8",
+    "scan_change": "0xcee168227089231be2404155dc993ff1fce80f98fd1745e509243b558a27f2a8",
+    "acknowledge": "0x860ff272ebc93fc16aaa907671c8796ca3169b0d9efa583bc49454db540d62c0"
+  },
+  "readback": {
+    "affected_nodes": [
+      {
+        "depth": 0,
+        "node_id": "GATEWAY",
+        "node_index": 0,
+        "severity": 3
+      },
+      {
+        "depth": 1,
+        "node_id": "LEDGER",
+        "node_index": 1,
+        "severity": 3
+      },
+      {
+        "depth": 2,
+        "node_id": "WORKER",
+        "node_index": 2,
+        "severity": 3
+      },
+      {
+        "depth": 3,
+        "node_id": "SCREEN",
+        "node_index": 3,
+        "severity": 3
+      }
+    ],
+    "analyst": "0x013A0745a3b2DbF87f4AB377266fCcb7e6eEC88A",
+    "change_url": "https://cdn.jsdelivr.net/gh/SAMiiNW/change-shockwave@583ca3bd36995d1e8bfc2300ffdc216741202ac6/evidence/change-notice.md",
+    "deadline": 1794177336,
+    "digests": [
+      "afca61c01648ffe7c2de8969a4730de75cc54a7a50f08a83c7d2e296a5f65050",
+      "8276f0a661d6e8a2c50400f4cc52a40fa59632377865f1320ff16331917bd5dd",
+      "70be16b6817f1cb811ebce35c6610b3339f8f7fd50404901fb0654726f0c46c5",
+      "5298313a64d43078533310bf096eb06a042f1066567677559b7eae111ff71c59",
+      "78a8df23a6e8e8caf9ff6779ed03056bddb9fffe8bb3c823db579d66f38a4950",
+      "fc92391316d54c1dc99533f1b9578c18f4ea97bf2df402f23fe167399e52ae9c"
+    ],
+    "direct_impacts": [
+      {
+        "impact": "BREAK",
+        "node_index": 0
+      }
+    ],
+    "gate": "STOP",
+    "id": "WAVE-1794173735",
+    "nodes": [
+      {
+        "depends_on": [],
+        "doc_url": "https://raw.githack.com/SAMiiNW/change-shockwave/583ca3bd36995d1e8bfc2300ffdc216741202ac6/evidence/gateway.md",
+        "id": "GATEWAY",
+        "label": "Edge Gateway",
+        "origin": "raw.githack.com"
+      },
+      {
+        "depends_on": [
+          0
+        ],
+        "doc_url": "https://rawcdn.githack.com/SAMiiNW/change-shockwave/583ca3bd36995d1e8bfc2300ffdc216741202ac6/evidence/ledger.md",
+        "id": "LEDGER",
+        "label": "Ledger API",
+        "origin": "rawcdn.githack.com"
+      },
+      {
+        "depends_on": [
+          1
+        ],
+        "doc_url": "https://cdn.statically.io/gh/SAMiiNW/change-shockwave/583ca3bd36995d1e8bfc2300ffdc216741202ac6/evidence/worker.md",
+        "id": "WORKER",
+        "label": "Queue Worker",
+        "origin": "cdn.statically.io"
+      },
+      {
+        "depends_on": [
+          0,
+          2
+        ],
+        "doc_url": "https://f0ec95a6.change-shockwave.pages.dev/screen.md",
+        "id": "SCREEN",
+        "label": "Operations Screen",
+        "origin": "f0ec95a6.change-shockwave.pages.dev"
+      }
+    ],
+    "owner": "0xCAFA30BF94D4fb01146588a1b7901BD85E7DbD0f",
+    "policy_url": "https://raw.githubusercontent.com/SAMiiNW/change-shockwave/583ca3bd36995d1e8bfc2300ffdc216741202ac6/evidence/change-policy.md",
+    "review_seconds": 3600,
+    "rollback_order": [
+      "SCREEN",
+      "WORKER",
+      "LEDGER",
+      "GATEWAY"
+    ],
+    "state": "ACKNOWLEDGED",
+    "title": "Gateway header migration shockwave"
+  }
+}
