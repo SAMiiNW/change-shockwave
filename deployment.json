@@ -1,0 +1,12 @@
+{
+  "account": "SAMiiNW",
+  "network": "StudioNet",
+  "contractAddress": "0x41D72FF801EAaCee8A0dA2255Ba5979fc200E454",
+  "deploymentTransaction": "0x7a12f9c1dc3ccce5d10fea75bcaffdad5a9467ae5e27fef8d0a06dd6d5c3ce80",
+  "deploymentConsensus": "MAJORITY_AGREE",
+  "deploymentExecution": "SUCCESS",
+  "sourceSha256": "648ebdd63cbac9c011192bc2c1065d7e1da83ac20027e39844ce1a18ddf76a65",
+  "sourceCommit": "846a7d7accdac6c7c3ab98b0336708cf7fe880cc",
+  "repository": "https://github.com/SAMiiNW/change-shockwave",
+  "publicSite": "https://change-shockwave.pages.dev/"
+}
